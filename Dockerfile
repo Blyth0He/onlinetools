@@ -19,9 +19,9 @@ RUN echo \
 	[global] \
 	index-url = http://pypi.douban.com/simple \
 	> ~/.pip/pip.conf
-CMD ["export", "http_proxy=http://xx.xx.xx.xx:7890"]
-CMD ["export", "https_proxt=http://xx.xx.xx.xx:7890"]
-CMD ["export", "all_proxt=socks5://xx.xx.xx.xx:7891"]
+# CMD ["export", "http_proxy=http://xx.xx.xx.xx:7890"]
+# CMD ["export", "https_proxt=http://xx.xx.xx.xx:7890"]
+# CMD ["export", "all_proxt=socks5://xx.xx.xx.xx:7891"]
 RUN git clone  https://github.com/Blyth0He/onlinetools.git /onlinetools
 WORKDIR /onlinetools
 RUN pip install -r requirements.txt && \
